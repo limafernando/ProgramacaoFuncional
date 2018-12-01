@@ -62,4 +62,14 @@ soma-medias
 (potencia 2 0)
 
 ;extra
-(potencia 2 -1)
+
+(define (potencia-extra x y)
+  (if (> y 0) (* x (potencia-extra x (- y 1)))
+      (if (= y 0) 1 (/ 1 (potencia-extra x (- y))))))
+
+(potencia-extra  2 3)
+(potencia-extra  2 4)
+(potencia-extra  2 0)
+(potencia-extra  2 -1)
+(potencia-extra  2 -2)
+(potencia-extra  2 -3)
