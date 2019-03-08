@@ -366,9 +366,6 @@
                (concat-lista-sep (list "bacon" "hamburguer" "cebola") ", ")
                "bacon, hamburguer, cebola"))
 
-;;(define (teste lista-str sep)
-  ;;(map (lambda (x) (~a x sep)) lista-str)
-  ;;(fold-right append lista-str sep (map (lambda (x) (~a x sep)) lista-str)))
 
 ;; --- Executa todos os testes ---------
 (run-tests
